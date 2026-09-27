@@ -18,13 +18,13 @@ jobs:
         id: setup-node
         uses: actions/setup-node@v4
         with:
-          node-version-file: package.json
+          node-version: 24
 
       - name: Install pnpm
-        id: setup-pnpm
+        id: install-pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 11
 
       - name: Install dependencies
         id: install-dependencies
